@@ -1,40 +1,44 @@
 .index-we-do {
-  padding-bottom: 40px;
+  padding-bottom: rem-calc(40);
+
+  @include breakpoint(medium) {
+    padding-bottom: rem-calc(70);
+  }
 
   @include breakpoint(large) {
     background: url(../img/index-production-bg.png) no-repeat calc(50% + 346px) bottom;
-    padding-bottom: 132px;
+    padding-bottom: rem-calc(132);
   }
 
   h1 {
-    margin-bottom: 17px;
+    margin-bottom: rem-calc(17);
   }
 
   &__steps {
     border: solid 1px $border-light-blue;
-    margin: 40px 0 56px;
+    margin: rem-calc(40 0 56);
   }
 
   &__step {
-    padding: 24px 22px 18px 24px;
+    padding: rem-calc(24 22 18 24);
 
     &:not(:first-child) {
       border-left: solid 1px $border-light-blue;
     }
 
     h3 {
-      font-size: 16px;
       color: #99aecc;
-      margin-bottom: 93px;
+      font-size: rem-calc(16);
+      margin-bottom: rem-calc(93);
     }
 
     h2 {
       line-height: 1.7;
-      margin-bottom: 17px;
+      margin-bottom: rem-calc(17);
     }
 
     svg {
-      margin-left: 13px;
+      margin-left: rem-calc(13);
     }
   }
 

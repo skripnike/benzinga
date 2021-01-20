@@ -1,6 +1,11 @@
 .index-about {
-  margin-bottom: rem-calc(60);
+  margin-bottom: rem-calc(30);
   padding-top: rem-calc(40);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(60);
+    padding-top: rem-calc(80);
+  }
 
   @include breakpoint(large) {
     background: url('../img/index-about-bg.png') no-repeat center bottom 88px;
@@ -12,16 +17,26 @@
   &__left {
 
     h1 {
-      margin-bottom: rem-calc(26);
-      padding-right: rem-calc(10);
+      @include breakpoint(medium) {
+        margin-bottom: rem-calc(26);
+        padding-right: rem-calc(10);
+      }
     }
 
     p {
-      padding-right: rem-calc(90);
+      @include breakpoint(medium) {
+        padding-right: rem-calc(90);
+      }
     }
 
     a {
-      margin-top: rem-calc(18);
+      @include breakpoint(medium) {
+        margin-top: rem-calc(18);
+      }
+    }
+
+    :last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -29,24 +44,37 @@
     padding-top: rem-calc(103);
 
     h3 {
-      line-height: 1.78;
-      margin: rem-calc(22 0 16);
-      padding-right: rem-calc(60);
+      @include breakpoint(medium) {
+        line-height: 1.78;
+        margin: rem-calc(22 0 16);
+        padding-right: rem-calc(60);
+      }
     }
 
     p {
-      padding-right: rem-calc(20);
+      @include breakpoint(medium) {
+        padding-right: rem-calc(20);
+      }
+    }
+
+    :last-child {
+      margin-bottom: 0;
     }
   }
 }
 
 .index-benefits {
-  margin-bottom: rem-calc(60);
-  margin-top: rem-calc(30);
+  margin-bottom: rem-calc(30);
+  margin-top: rem-calc(20);
 
   @include breakpoint(medium) {
+    margin-bottom: rem-calc(60);
+    margin-top: rem-calc(40);
+  }
+
+  @include breakpoint(large) {
     margin-bottom: rem-calc(120);
-    margin-top: rem-calc(60);
+    margin-top: rem-calc(76);
   }
 
   &__benefit {

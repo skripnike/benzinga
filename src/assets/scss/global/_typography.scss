@@ -6,6 +6,12 @@ h1,
 h2,
 h3 {
   text-transform: uppercase;
+
+  &.h-stat {
+    font-size: rem-calc(88);
+    font-weight: $global-weight-normal;
+    line-height: 1;
+  }
 }
 
 p {

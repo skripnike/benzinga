@@ -1,0 +1,64 @@
+.index-result {
+  background: radial-gradient(52.07% 52.07% at 61.13% 47.93%, #1E2E4A 0%, #242A35 100%);
+  padding: rem-calc(30 0);
+
+  @include breakpoint(medium) {
+    padding: rem-calc(60 0);
+  }
+
+  @include breakpoint(large) {
+    padding: rem-calc(120 0);
+  }
+
+  &__left {
+    h1 {
+      @include breakpoint(medium) {
+        margin-bottom: rem-calc(32);
+        padding-right: rem-calc(50);
+      }
+    }
+
+    p:not(.p-lead) {
+      @include breakpoint(medium) {
+        margin-bottom: rem-calc(64);
+        padding-right: rem-calc(170);
+      }
+    }
+
+    .p-lead {
+      @include breakpoint(medium) {
+        margin-bottom: rem-calc(25);
+        padding-right: rem-calc(50);
+      }
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__right {
+    h2 {
+      @include breakpoint(medium) {
+        margin-bottom: rem-calc(22);
+      }
+    }
+
+    h3 {
+      @include breakpoint(medium) {
+        line-height: 1.78;
+        margin-bottom: rem-calc(17);
+      }
+    }
+
+    p {
+      @include breakpoint(medium) {
+        padding-right: rem-calc(50);
+      }
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
