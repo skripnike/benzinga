@@ -2,8 +2,8 @@
   margin-bottom: rem-calc(60);
   padding-top: rem-calc(40);
 
-  @include breakpoint(medium) {
-    background: url('../img/index-about.png') no-repeat center bottom 88px;
+  @include breakpoint(large) {
+    background: url('../img/index-about-bg.png') no-repeat center bottom 88px;
     background-size: 100%;
     margin-bottom: rem-calc(120);
     padding-top: rem-calc(191);
