@@ -62,11 +62,16 @@
 
 @import 'util/util';
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Open+Sans:wght@400;700&display=swap');
+$primary-font-family: 'Manrope', sans-serif;
+$secondary-font-family: 'Open Sans', sans-serif;
+
 // 1. Global
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1000);
+$global-width: rem-calc(1020);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -81,16 +86,18 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #f2f8ff;
 $dark-blue: #1c222b;
+$light-blue-p: #99aecc;
+$light-blue-video: #273040;
 $body-background: $dark-blue;
 $body-font-color: $white;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: $primary-font-family;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
-$global-radius: 0;
+$global-weight-normal: 500;
+$global-weight-bold: 700;
+$global-radius: rem-calc(8);
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -144,7 +151,7 @@ $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
-$header-lineheight: 1.4;
+$header-lineheight: 1.5;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
@@ -161,13 +168,13 @@ $header-styles: (
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h6': ('font-size': 18),
   ),
 );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.7;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
@@ -208,7 +215,7 @@ $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
-$stat-font-size: 2.5rem;
+$stat-font-size: rem-calc(88);
 $cite-color: $dark-gray;
 $cite-font-size: rem-calc(13);
 $cite-pseudo-content: '\2014 \0020';
@@ -886,8 +893,8 @@ $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
-  small: 20px,
-  medium: 30px
+  small: 10px,
+  medium: 15px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

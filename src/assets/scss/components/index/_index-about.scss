@@ -1,0 +1,43 @@
+.index-about {
+  margin-bottom: rem-calc(60);
+  padding-top: rem-calc(40);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(120);
+    padding-top: rem-calc(191);
+  }
+
+  &__left {
+
+    h1 {
+      margin-bottom: rem-calc(26);
+      padding-right: rem-calc(10);
+    }
+
+    p {
+      padding-right: rem-calc(90);
+    }
+  }
+
+  &__right {
+    padding-top: rem-calc(103);
+
+    h3 {
+      line-height: 1.78;
+      margin: rem-calc(22 0 16);
+      padding-right: rem-calc(60);
+    }
+
+    p {
+      padding-right: rem-calc(20);
+    }
+  }
+}
+
+.index-benefits {
+  &__benefit {
+    background: linear-gradient(180deg, rgba(26, 121, 255, 0) 0%, rgba(26, 121, 255, 0.05) 100%);
+    padding: 24px 16px 28px;
+    border-bottom: solid 1px #1a79ff;
+  }
+}

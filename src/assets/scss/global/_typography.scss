@@ -1,0 +1,20 @@
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  &.p-light {
+    color: $light-blue-p;
+    font-size: rem-calc(14);
+  }
+
+  &.p-lead {
+    font-size: rem-calc(18);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(24);
+    }
+  }
+}
