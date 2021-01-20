@@ -88,6 +88,7 @@ $white: #f2f8ff;
 $dark-blue: #1c222b;
 $light-blue-p: #99aecc;
 $light-blue-video: #273040;
+$blue-border: #1a79ff;
 $body-background: $dark-blue;
 $body-font-color: $white;
 $body-font-family: $primary-font-family;
@@ -147,7 +148,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
@@ -315,7 +316,7 @@ $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 1rem,
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
@@ -324,6 +325,10 @@ $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 $button-responsive-expanded: false;
+
+$button-custom-background: linear-gradient(180deg, rgba(68, 146, 255, 1) 0%, rgba(0, 104, 250, 1) 100%);
+$button-custom-background-hover: linear-gradient(180deg, rgba(68, 146, 255, 0.8) 0%, rgba(0, 104, 250, 0.8) 100%);
+$button-custom-shadow: 0px 5px 68px rgba(65, 130, 222, 0.5), 0px 5px 24px rgba(0, 0, 0, 0.1), inset 0px 3px 16px #6fabff;
 
 // 12. Button Group
 // ----------------
