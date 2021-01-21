@@ -1,12 +1,12 @@
 .index-result {
   background: radial-gradient(52.07% 52.07% at 61.13% 47.93%, #1E2E4A 0%, #242A35 100%);
-  padding: rem-calc(30 0);
-
-  @include breakpoint(medium) {
-    padding: rem-calc(60 0);
-  }
+  padding: rem-calc(40 0);
 
   @include breakpoint(large) {
+    padding: rem-calc(80 0);
+  }
+
+  @include breakpoint(xlarge) {
     padding: rem-calc(120 0);
   }
 
@@ -38,6 +38,10 @@
   }
 
   &__right {
+    @include breakpoint(small down) {
+      padding-top: rem-calc(40);
+    }
+
     h2 {
       @include breakpoint(medium) {
         margin-bottom: rem-calc(22);

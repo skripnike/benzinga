@@ -1,12 +1,12 @@
 .index-we-do {
   padding-bottom: rem-calc(40);
 
-  @include breakpoint(medium) {
-    padding-bottom: rem-calc(70);
-  }
-
   @include breakpoint(large) {
     background: url(../img/index-production-bg.png) no-repeat calc(50% + 346px) bottom;
+    padding-bottom: rem-calc(80);
+  }
+
+  @include breakpoint(xlarge) {
     padding-bottom: rem-calc(132);
   }
 
@@ -23,13 +23,22 @@
     padding: rem-calc(24 22 18 24);
 
     &:not(:first-child) {
-      border-left: solid 1px $border-light-blue;
+      border-top: solid 1px $border-light-blue;
+
+      @include breakpoint(medium) {
+        border-left: solid 1px $border-light-blue;
+        border-top: none;
+      }
     }
 
     h3 {
       color: #99aecc;
       font-size: rem-calc(16);
-      margin-bottom: rem-calc(93);
+      margin-bottom: rem-calc(40);
+
+      @include breakpoint(large) {
+        margin-bottom: rem-calc(93);
+      }
     }
 
     h2 {

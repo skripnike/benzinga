@@ -1,13 +1,13 @@
 .index-happy-clients {
-  margin-bottom: rem-calc(30);
-  margin-top: rem-calc(30);
-
-  @include breakpoint(medium) {
-    margin-bottom: rem-calc(60);
-    margin-top: rem-calc(60);
-  }
+  margin-bottom: rem-calc(40);
+  margin-top: rem-calc(40);
 
   @include breakpoint(large) {
+    margin-bottom: rem-calc(80);
+    margin-top: rem-calc(80);
+  }
+
+  @include breakpoint(xlarge) {
     margin-bottom: rem-calc(120);
     margin-top: rem-calc(120);
   }
@@ -20,6 +20,10 @@
 
   &__testimonial {
     background: rgba(40, 61, 89, 0.25);
+
+    @include breakpoint(small down) {
+      margin-top: rem-calc(16);
+    }
 
     .index-video {
       background: rgba(40, 61, 89, 0.25);
@@ -59,18 +63,36 @@
     border: solid 1px $border-light-blue;
     cursor: pointer;
     height: 48px;
-    left: -88px;
     transition: background-color 0.25s ease-out;
     width: 48px;
     padding: 0;
+
+    @include breakpoint(small down) {
+      display: none;
+    }
+
+    @include breakpoint(xlarge down) {
+      background-color: rgba(40, 61, 89, 0.3);
+    }
 
     &:hover {
       background-color: $border-light-blue;
     }
   }
 
+  .orbit-previous {
+    left: 5px;
+
+    @include breakpoint(xlarge) {
+      left: -88px;
+    }
+  }
+
   .orbit-next {
-    left: initial;
-    right: -88px;
+    right: 5px;
+
+    @include breakpoint(xlarge) {
+      right: -88px;
+    }
   }
 }

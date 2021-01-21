@@ -14,7 +14,9 @@ h3 {
   }
 
   &.h-big {
-    font-size: 56px;
+    @include breakpoint(large) {
+      font-size: 56px;
+    }
   }
 }
 
