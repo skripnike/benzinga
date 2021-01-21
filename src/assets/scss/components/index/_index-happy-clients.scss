@@ -1,0 +1,55 @@
+.index-happy-clients {
+  margin-bottom: rem-calc(30);
+  margin-top: rem-calc(30);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(60);
+    margin-top: rem-calc(60);
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(120);
+    margin-top: rem-calc(120);
+  }
+
+  &__p {
+    @include breakpoint(medium) {
+      margin-bottom: rem-calc(48);
+    }
+  }
+
+  &__testimonial {
+    background: rgba(40, 61, 89, 0.25);
+
+    .index-video {
+      background: rgba(40, 61, 89, 0.25);
+    }
+
+    h2 {
+      line-height: 1.7;
+      padding: rem-calc(24 24 0);
+      text-transform: none;
+    }
+
+    p {
+      padding: rem-calc(0 24);
+    }
+  }
+
+  &__read-full {
+    align-items: center;
+    border-top: solid 1px $border-light-blue;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem-calc(24);
+    padding: rem-calc(16 24);
+    text-transform: uppercase;
+    transition: background-color 0.25s ease-out;
+
+    &:hover {
+      background-color: $border-light-blue;
+      color: $white;
+    }
+  }
+}

@@ -1,4 +1,13 @@
 .index-video {
   background-color: $light-blue-video;
   margin: 0;
+
+  svg {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
